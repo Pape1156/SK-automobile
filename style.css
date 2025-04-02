@@ -1,7 +1,6 @@
 /* ============================= */
 /* STYLE GÉNÉRAL + SCROLL FIX */
 /* ============================= */
-
 html, body {
     margin: 0;
     padding: 0;
@@ -13,7 +12,6 @@ html, body {
   /* ============================= */
   /* HEADER - NAVIGATION */
   /* ============================= */
-  
   header {
     display: flex;
     justify-content: space-between;
@@ -62,7 +60,6 @@ html, body {
   /* ============================= */
   /* SLIDER FULLSCREEN + FIXES */
   /* ============================= */
-  
   .slider-section {
     position: relative;
     height: 100vh;
@@ -83,19 +80,33 @@ html, body {
     transition: transform 1.2s ease-in-out;
   }
   
-  .slider-track img {
-    min-width: 100vw;
+  /* Images slider - ajustée pour occuper 100% */
+  .slide-img {
+    width: 100vw;
     height: 100vh;
     object-fit: cover;
-    object-position: center; /* ✅ Centrage vertical vers le haut */
+    object-position: center;
     flex-shrink: 0;
     display: block;
+  }
+  
+  /* Ajustement image par image */
+  .img-1 {
+    object-position: center 80%;
+  }
+  .img-2 {
+    object-position: center 60%;
+  }
+  .img-3 {
+    object-position: center 59%;
+  }
+  .img-4 {
+    object-position: center 55%;
   }
   
   /* ============================= */
   /* TEXTE CENTRÉ SUR SLIDE */
   /* ============================= */
-  
   .slider-text {
     position: absolute;
     top: 50%;
