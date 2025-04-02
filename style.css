@@ -1,0 +1,55 @@
+/* Style général */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: white;
+    padding: 15px 40px;
+    position: relative;
+  }
+  
+  /* Partie gauche - texte */
+  .header-left .brand-text {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  
+  /* Partie centre - logo */
+  .header-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .logo {
+    height: 40px;
+  }
+  
+  /* Partie droite - menu */
+  .header-right .menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header-right .menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  .header-right .menu li a:hover {
+    color: #999;
+  }
